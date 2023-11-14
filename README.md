@@ -24,7 +24,7 @@ type President struct {
 Then we can fill it in,
 ```golang
 president := President{}
-err := Fill("first president of the united states", president)
+err := autostruct.Fill("first president of the united states", president)
 if err != nil {
     panic(err)
 }
@@ -41,7 +41,7 @@ fmt.Println(string(res))
 We can also fill in a slice,
 ```golang
 presidents := []President{}
-err := Fill("last 10 presidents of the united states", &presidents)
+err := autostruct.Fill("last 10 presidents of the united states", &presidents)
 if err != nil {
     panic(err)
 }
