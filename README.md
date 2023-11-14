@@ -25,7 +25,7 @@ Then we can fill it in,
 ```golang
 autostruct.Key = "sk_idneuwbfibeiwb" // open ai api key
 president := President{}
-err := autostruct.Fill("first president of the united states", president)
+err := autostruct.Fill("first president of the united states", &president)
 if err != nil {
     panic(err)
 }
