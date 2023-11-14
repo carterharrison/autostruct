@@ -23,6 +23,7 @@ type President struct {
 
 Then we can fill it in,
 ```golang
+autostruct.Key = "sk_idneuwbfibeiwb" // open ai api key
 president := President{}
 err := autostruct.Fill("first president of the united states", president)
 if err != nil {
@@ -40,6 +41,7 @@ fmt.Println(string(res))
 ```
 We can also fill in a slice,
 ```golang
+autostruct.Key = "sk_idneuwbfibeiwb" // open ai api key
 presidents := []President{}
 err := autostruct.Fill("last 10 presidents of the united states", &presidents)
 if err != nil {
