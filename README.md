@@ -16,8 +16,8 @@ import "github.com/carterharrison/autostruct"
 Assume we have the following struct,
 ```golang
 type President struct {
-	Name              string `json:"name"`
-	StartOfPresidency int    `json:"startOfPresidency" jsonschema_description:"the year the president started office"`
+    Name  string `json:"name"`
+    Start int    `json:"start" jsonschema_description:"the year the president started office"`
 }
 ```
 
